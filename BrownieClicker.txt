@@ -73,7 +73,11 @@ Achievements
 Shinies
 	*goldenBrownie
 		name:Golden Brownie
-		on click:yield (random(brownies:ps*60, brownies:ps*120 brownies
+		on click:
+			if (chance(50%))
+				$amount=max(7,random(brownies:ps*60,brownies:ps*120))
+				toast The <#ffc003>Golden Brownie</#> grants you <b>[$amount]</b> brownies.
+				yield $amount brownies
 		frequency:60
 		frequency variation:120
 		movement:growShrink pulse:1 bobVertical:0.25 bobHorizontal:0.25 anywhere
