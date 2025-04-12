@@ -82,8 +82,10 @@ Shinies
 				$amount=1
 				toast The <#ffc003>Golden Brownie</#> grants you <b>[$amount]</b> <#03f7ff>sugary brownies</#>.
 				yield $amount sugaryBrownies
-		frequency:60
-		frequency variation:120
+			end
+		end
+		frequency:5
+		frequency variation:0
 		movement:growShrink pulse:1 bobVertical:0.25 bobHorizontal:0.25 anywhere
 		class:hasFlares
 		icon:https://file.garden/ZlI3tfwmejv6_QbG/goldenBrownie.png
