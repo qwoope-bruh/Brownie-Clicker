@@ -1,0 +1,81 @@
+Let's make a game!
+	name:Brownie Clicker
+	by:qwoope
+	desc:A game about brownies
+	created:25/05/24
+	Version:1.0
+ 
+CSS
+#game.on
+{
+	background-size: 100% 100%;
+	image-rendering: pixelated;
+}
+ 
+.buildingIconSize
+{
+	height:32px;
+	width:32px;
+}
+ 
+.thing-icon.shiny-icon
+{
+	width:128px;
+	height:128px;
+}
+ 
+Settings
+	background:blank
+	stylesheet:stuff/bigBlue.css
+ 
+Buildings
+	*cow|cows
+		name:Cow|Cows
+		desc:These cows are working hard to produce milk for your brownies. Produces 1 brownie every second.
+		on tick:yield 1 brownie
+		cost:20 brownies
+		icon class:buildingIconSize
+		icon:https://file.garden/ZlI3tfwmejv6_QbG/New%20Piskel.png
+ 
+	*baker|bakers
+		name:Baker|Bakers
+		desc:More bakers means more brownies faster. Produces 6 brownies every second.
+		on tick:yield 6 brownies
+		cost:200 brownies
+		req:have cow
+		icon class:buildingIconSize
+		icon:https://file.garden/ZlI3tfwmejv6_QbG/New%20Piskel-1.png%20(8).png
+ 
+Resources
+	*brownie|brownies
+		name:Brownie|Brownies
+		desc:Bake as many of these sweet chocolate treats as you can!
+ 
+Buttons
+	*brownieButton
+		on click:yield 1 brownie
+		class:bigButton hasFlares
+		icon:https://file.garden/ZlI3tfwmejv6_QbG/brownieButton.png
+ 
+Upgrades
+	*greenerGrass
+		name:Greener Grass
+		desc:Greener Grass helps cows produce more high quality milk which means high quality brownies! Cows produce double brownies.
+		passive:multiply yield of cows by 2
+		cost:125 brownies
+ 
+Achievements
+	*firstBrownie
+		name:First Brownie
+		desc:Bake 1 brownie
+		req:1 brownie:earned
+ 
+Shinies
+	*goldenBrownie
+		name:Golden Brownie
+		on click:yield (random(brownies:ps*60, brownies:ps*120 brownies
+		frequency:60
+		frequency variation:120
+		movement:growShrink pulse:1 bobVertical:0.25 bobHorizontal:0.25 anywhere
+		class:hasFlares
+		icon:https://file.garden/ZlI3tfwmejv6_QbG/goldenBrownie.png
