@@ -50,6 +50,11 @@ Resources
 	*brownie|brownies
 		name:Brownie|Brownies
 		desc:Bake as many of these sweet chocolate treats as you can!
+
+	*sugaryBrownie|sugaryBrownies
+		name:Sugary Brownie|Sugary Brownies
+		desc: Like normal brownies, but <b>5</b> times the sugar!
+		hidden when 0
  
 Buttons
 	*brownieButton
