@@ -73,6 +73,11 @@ Achievements
 Shinies
 	*goldenBrownie
 		name:Golden Brownie
+		frequency:5
+		frequency variation:0
+		movement:growShrink pulse:1 bobVertical:0.25 bobHorizontal:0.25 anywhere
+		class:hasFlares
+		icon:https://file.garden/ZlI3tfwmejv6_QbG/goldenBrownie.png
 		on click:
 			if (chance(50%))
 				$amount=max(7,random(brownies:ps*60,brownies:ps*120))
@@ -84,8 +89,3 @@ Shinies
 				yield $amount sugaryBrownies
 			end
 		end
-		frequency:5
-		frequency variation:0
-		movement:growShrink pulse:1 bobVertical:0.25 bobHorizontal:0.25 anywhere
-		class:hasFlares
-		icon:https://file.garden/ZlI3tfwmejv6_QbG/goldenBrownie.png
