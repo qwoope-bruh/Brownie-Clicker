@@ -91,6 +91,6 @@ Shinies
 			else
 				$amount=1
 				toast The <#ffc003>Golden Brownie</#> grants you <b>[$amount]</b> <#03f7ff>sugary brownies</#>.
-				yield $amount sugaryBrownie
+				yield $amount sugaryBrownies
 			end
 		end
