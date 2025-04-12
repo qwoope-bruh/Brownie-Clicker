@@ -78,6 +78,10 @@ Shinies
 				$amount=max(7,random(brownies:ps*60,brownies:ps*120))
 				toast The <#ffc003>Golden Brownie</#> grants you <b>[$amount]</b> brownies.
 				yield $amount brownies
+			else
+				$amount=1
+				toast The <#ffc003>Golden Brownie</#> grants you <b>[$amount]</b> <#03f7ff>sugary brownies</#>.
+				yield $amount sugaryBrownies
 		frequency:60
 		frequency variation:120
 		movement:growShrink pulse:1 bobVertical:0.25 bobHorizontal:0.25 anywhere
