@@ -77,7 +77,6 @@ Achievements
  
 Shinies
 	*goldenBrownie
-		name:Golden Brownie
 		frequency:5
 		frequency variation:0
 		movement:growShrink pulse:1 bobVertical:0.25 bobHorizontal:0.25 anywhere
