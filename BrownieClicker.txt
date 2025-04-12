@@ -30,7 +30,7 @@ Settings
  
 Buildings
 	*cow|cows
-		name:Bow|Bows
+		name:Cow|Cows
 		desc:These cows are working hard to produce milk for your brownies. Produces 1 brownie every second.
 		on tick:yield 1 brownie
 		cost:20 brownies
